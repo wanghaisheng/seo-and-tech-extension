@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 	document.getElementById('openSEO').addEventListener('click', (event) => openTab(event, 'SEO'));
+
 	document.getElementById('openTech').addEventListener('click', (event) => openTab(event, 'Tech'));
 	document.getElementById('openCDN').addEventListener('click', (event) => openTab(event, 'CDN'));
 	document.getElementById('openAnalytics').addEventListener('click', (event) => openTab(event, 'Analytics'));
 	document.getElementById('openSecurity').addEventListener('click', (event) => openTab(event, 'Security'));
+	document.getElementById('openRank').addEventListener('click', (event) => openTab(event, 'Rank'));
 	document.getElementById('openSEO').click();
-  
+
 	chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
 	  const tabId = tabs[0].id;
 	  showLoading();
