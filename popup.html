@@ -8,12 +8,19 @@
   <div class="container">
     <h1>SEO & Tech Analyzer</h1>
     <div class="tabs">
+      <button class="tablinks" id="openRank">rankhistory</button>
+
       <button class="tablinks" id="openSEO">SEO</button>
       <button class="tablinks" id="openTech">Technologies</button>
       <button class="tablinks" id="openCDN">CDN</button>
       <button class="tablinks" id="openAnalytics">Analytics</button>
       <button class="tablinks" id="openSecurity">Security</button>
     </div>
+    <div id="SEO" class="tabcontent">
+      <div id="rankScore"><h2>Rank History</h2></div>
+      <div id="rankCsv"></div>
+      <div id="rankChart"><h2>Rank chart</h2></div>
+    </div>    
     <div id="loading" class="loading">
       <div class="spinner"></div>
     </div>
@@ -36,6 +43,8 @@
     </div>
   </div>
   <script src="js/seo.js"></script>
+  <script src="js/rank.js"></script>
+
   <script src="js/technologies.js"></script>
   <script src="js/cdn.js"></script>
   <script src="js/analytics.js"></script>
